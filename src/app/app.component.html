@@ -1,0 +1,9 @@
+<app-header />
+<app-user-input />
+@if (dataResult.length > 0) {
+    @for (investment of dataResult; track investment.year ) {
+        <app-investment-results  [dataInvestmentTable]="investment" />
+    }   
+} @else {
+    <p class="center">Please, enter some data and press "calculate"</p>
+}

@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <th>Year</th>
+        <th>Investment value</th>
+        <th>Interest (years)</th>
+        <th>Total Interest</th>
+        <th>Invested capital</th>     
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ dataInvestmentTable.year }}</td>
+            <td>{{ dataInvestmentTable.valueEndOfYear | number | currency }}</td>
+            <td>{{ dataInvestmentTable.interest | number | currency  }}</td>
+            <td>{{ dataInvestmentTable.totalInterest | number | currency }}</td>
+            <td>{{ dataInvestmentTable.totalAmountInvested | number | currency }}</td>
+        </tr>
+    </tbody>
+</table>
